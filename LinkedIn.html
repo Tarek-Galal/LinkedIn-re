@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LinkedIn</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />    
+    </head>
+    <body class="body">
+        <!-- the upper nav-bar START -->
+        <div class="upper-navbar">
+           <a href="https://www.linkedin.com/feed/?doFeedRefresh=true&nis=true"><img src="img/linkedin-icon.svg" width="34px" height="34px" alt="linkedin" class="logo"></a>
+            <div class="search">
+
+
+                <input type="text" placeholder="Search"  class="search-bar" id="bar" name="search">
+                
+            </div>
+            <div class="home_page">
+                <a href="https://www.linkedin.com/feed/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bud73%2BeMvRGaYH33%2Ba57h9g%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-nav_homepage" class="home_link">
+                    <svg id="global-nav-icon--mercado__home" height="24" width="24">
+                        <path d="m23 9v2h-2v7c0 1.7-1.3 3-3 3h-4v-6h-4v6h-4c-1.7 0-3-1.3-3-3v-7h-2v-2l11-7z"></path>
+                    </svg></a>
+                <p class="lable">Home</p>
+            </div>
+            <div class="network">
+                <a href="https://www.linkedin.com/mynetwork/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bud73%2BeMvRGaYH33%2Ba57h9g%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-nav_mynetwork">
+                    <svg id="global-nav-icon--mercado__my-network" height="24" width="24">
+                        <path d="m12 16v6h-9v-6c0-1.7 1.3-3 3-3h3c1.7 0 3 1.3 3 3zm5.5-3c1.9 0 3.5-1.6 3.5-3.5s-1.6-3.5-3.5-3.5-3.5 1.6-3.5 3.5 1.6 3.5 3.5 3.5zm1 2h-2c-1.4 0-2.5 1.1-2.5 2.5v4.5h7v-4.5c0-1.4-1.1-2.5-2.5-2.5zm-11-13c-2.5 0-4.5 2-4.5 4.5s2 4.5 4.5 4.5 4.5-2 4.5-4.5-2-4.5-4.5-4.5z"></path>
+                    </svg>
+                </a>
+                <p class="lable">My Network</p>
+            </div>
+            <div class="jobs">
+               <a href="https://www.linkedin.com/jobs/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bud73%2BeMvRGaYH33%2Ba57h9g%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-nav_jobs">
+                    <svg id="global-nav-icon--mercado__jobs" height="24" width="24">
+                        <path d="m17 6v-1c0-1.7-1.3-3-3-3h-4c-1.7 0-3 1.3-3 3v1h-5v4c0 1.7 1.3 3 3 3h14c1.7 0 3-1.3 3-3v-4zm-8-1c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v1h-6zm10 9c1.2 0 2.3-.5 3-1.4v4.4c0 1.7-1.3 3-3 3h-14c-1.7 0-3-1.3-3-3v-4.4c.7.9 1.8 1.4 3 1.4z"></path>
+                    </svg>
+                </a>
+                <p class="lable">Jobs</p>
+            </div>
+            <div class="messageng">
+                <a href="https://www.linkedin.com/messaging/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BVknscMK8RimITXBKX7vzSg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-nav_messaging">
+                    <svg id="global-nav-icon--mercado__messaging" height="24" width="24">
+                        <path d="M16 3H8C6.14348 3 4.36301 3.77847 3.05025 5.16416C1.7375 6.54984 1 8.42923 1 10.3889C1 12.3485 1.7375 14.2279 3.05025 15.6136C4.36301 16.9993 6.14348 17.7778 8 17.7778H12V22L20.16 16.3106C21.0512 15.639 21.7751 14.7495 22.2697 13.7183C22.7643 12.687 23.0148 11.5446 23 10.3889C23 8.42923 22.2625 6.54984 20.9497 5.16416C19.637 3.77847 17.8565 3 16 3ZM8 11.7083C7.75277 11.7083 7.5111 11.631 7.30554 11.486C7.09998 11.341 6.93976 11.1349 6.84515 10.8938C6.75054 10.6527 6.72579 10.3874 6.77402 10.1315C6.82225 9.87553 6.9413 9.64043 7.11612 9.4559C7.29093 9.27137 7.51366 9.14571 7.75614 9.0948C7.99861 9.04389 8.24995 9.07002 8.47835 9.16988C8.70676 9.26975 8.90199 9.43886 9.03934 9.65585C9.17669 9.87283 9.25 10.1279 9.25 10.3889C9.25 10.7388 9.1183 11.0744 8.88388 11.3219C8.64946 11.5693 8.33152 11.7083 8 11.7083ZM12 11.7083C11.7528 11.7083 11.5111 11.631 11.3055 11.486C11.1 11.341 10.9398 11.1349 10.8452 10.8938C10.7505 10.6527 10.7258 10.3874 10.774 10.1315C10.8222 9.87553 10.9413 9.64043 11.1161 9.4559C11.2909 9.27137 11.5137 9.14571 11.7561 9.0948C11.9986 9.04389 12.2499 9.07002 12.4784 9.16988C12.7068 9.26975 12.902 9.43886 13.0393 9.65585C13.1767 9.87283 13.25 10.1279 13.25 10.3889C13.25 10.7388 13.1183 11.0744 12.8839 11.3219C12.6495 11.5693 12.3315 11.7083 12 11.7083ZM16 11.7083C15.7528 11.7083 15.5111 11.631 15.3055 11.486C15.1 11.341 14.9398 11.1349 14.8452 10.8938C14.7505 10.6527 14.7258 10.3874 14.774 10.1315C14.8222 9.87553 14.9413 9.64043 15.1161 9.4559C15.2909 9.27137 15.5137 9.14571 15.7561 9.0948C15.9986 9.04389 16.2499 9.07002 16.4784 9.16988C16.7068 9.26975 16.902 9.43886 17.0393 9.65585C17.1767 9.87283 17.25 10.1279 17.25 10.3889C17.25 10.7388 17.1183 11.0744 16.8839 11.3219C16.6495 11.5693 16.3315 11.7083 16 11.7083Z"></path>
+                    </svg>
+                </a>
+                <p class="lable">Messageng</p>
+            </div>
+            <div class="notifications">
+                <a href="https://www.linkedin.com/notifications/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BvCYBTBmTSFmW9YYX%2F2fyCA%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-nav_notifications">
+                    <svg id="global-nav-icon--mercado__notifications" height="24" width="24">
+                    <path d="M13.7 19C13.9 19.3 14 19.6 14 20C14 21.1 13.1 22 12 22C10.9 22 10 21.1 10 20C10 19.6 10.1 19.3 10.3 19H2V18C2 17 2.4 16.1 3.2 15.2L4.2 14H19.9L20.9 15.2C21.7 16.2 22.1 17.1 22.1 18V19H13.7ZM18.2 7.4C17.8 4.3 15.1 2 12 2C8.9 2 6.2 4.3 5.8 7.4L5 13H19L18.2 7.4Z"></path>
+                    </svg>
+                </a>
+                <p class="lable">Notifications</p>
+            </div>
+            <div class="profile">
+                <img src="img/bill gates.jpg" width="26" height="26" class="profile_img" alt="Bill Gates"><br>
+                <span class="work_profile">
+                    <p class="lable" style="display: inline;">Me</p>
+                
+                    <svg id="global-nav-icon--classic__down-arrow" width="16" height="16" data-supported-dps="16x16">
+                        <path d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div style="border-left: 1px solid rgba(205,207,210,.7); height: 53px; position: absolute; left: 1066px;"></div>
+            <div class="work ">
+                <svg id="global-nav-icon--classic__work" height="24" width="24">
+                    <path d="M10 10h4v4h-4v-4zm0 11h4v-4h-4v4zm-7-7h4v-4H3v4zm0 7h4v-4H3v4zM3 7h4V3H3v4zm14 7h4v-4h-4v4zm0-11v4h4V3h-4zm-7 4h4V3h-4v4zm7 14h4v-4h-4v4z"></path>
+                </svg> <br>
+                <span class="work_profile">
+                    <p class="lable" >Work</p>
+                    <svg id="global-nav-icon--classic__down-arrow" width="16" height="16" data-supported-dps="16x16">
+                        <path d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z"></path>
+                    </svg>
+                </span>
+            </div>
+            <div class="try lable">
+                <a href="https://www.linkedin.com/premium/products?upsellOrderOrigin=premium_nav_upsell_text&destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fwilliamhgates%2F%3FshowPremiumWelcomeBanner%3Dtrue&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BRRB2MAuARWWwcn1f1LxprQ%3D%3D" style="text-decoration: none;color: #7d6934;">Try Premium Free for 1 month</a>
+            </div> 
+        </div>
+        <!-- the upper nav-bar END -->
+
+        <!-- Seprate -->
+        <div class="Seprate">
+            
+        </div>
+        <!-- Seprate -->
+
+        <!-- main page START -->
+        <div class="main-page">
+
+            <!-- main info START -->
+            <div class="main-info">
+                <img src="img/bill gates.jpg" alt="bill gates" width="150px" height="150px" class="bill_img">
+                <div class="pt-1">
+                    <div>
+                        <div><h1 class="bill_name">Bill Gates</h1></div>
+                        <div style="font-weight: 400; line-height: 1.25;">Co-chair, Bill & Melinda Gates Foundation</div>
+                        <div style="display: inline-flex;align-items: baseline;">
+                        <div style="padding: 12px 0px 12px 0px;">
+                            <span style="font-size: small;font-weight: 400;line-height: 1.25; color: #38383899;padding-right: 4px;">Seattle, Washington, United States</span>
+                        </div>
+                            <span class="Contact_info">
+                                <a href="https://www.linkedin.com/in/williamhgates/detail/contact-info/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B6fwneiIfQFy246tvx3woug%3D%3D" style="text-decoration: none; color: #0a66c2; font-weight: 600; font-size: small;">Contact info
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li class="foundation_link">
+                            <a href="https://www.linkedin.com/in/williamhgates/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B2Kcg6GAURfCdFdxHk3iq9w%3D%3D#">
+                                <Img src="img/foundation.jpg" width="32px" height="32px"></Img>
+                                <h2 style="padding-left: 6px;">Bill & Melinda Gates Foundation</h2>
+                            </a>
+                        </li>
+                        <li class="foundation_link">
+                            <a href="https://www.linkedin.com/in/williamhgates/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BMJhqcBX7T%2FygvnlOu2cMsQ%3D%3D#" style="margin-top: 10px">
+                                <Img src="img/harvard.png" width="32px" height="32px"></Img>
+                                <h2 style="padding-left: 6px;">Harvard University</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="follo">
+                    <span style="font-weight: bold;">32,711,966</span> followers
+                </div>
+                <div class="more">
+                    <div class="in_more" >
+                        <button>
+                            <li-icon aria-hidden="true" type="check-icon" class="artdeco-button__icon" size="small">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false" style="color: white;">
+                                <path d="M12.57 2H15L6 15l-5-5 1.41-1.41 3.31 3.3z"></path>
+                              </svg>
+                            </li-icon>
+                              <span style="color: white;">
+                                Following
+                            </span>
+                        </button>
+                        <button id="more_butt">
+                            <span>More</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- main info END -->
+
+            <!-- About START -->
+            <div class="about">
+                <h2>About</h2>
+                <p>Co-chair of the Bill & Melinda Gates Foundation. Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger.</p>
+
+            </div>
+            <!-- About END -->
+
+            <!-- activity START -->
+            <div class="activity">
+                <h2>Activity</h2>
+                <span>32,727,783 followers</span>
+                <div style="margin-top: 15px;">
+                    <ul>
+                        <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6791399606761607168?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B1OKCZTM%2FRmu3eQrFd2hLeg%3D%3D" class="LeadersClimateSummit_link" style="text-decoration: none; margin-bottom: 16px; width: 50%;">
+                            <li >
+                                <div>
+                                <img src="img/1619195085500.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">I was honored to speak at today’s #LeadersClimateSummit about the thre... </h3>
+                                    <div style="margin-top: 6px;font-size: 14px;font-weight: 375; color: #000000e6;">
+                                        Bill shared this
+                                    </div>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6791126995091640320?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B6H5upWE3SWe0Y%2FYePh1l8g%3D%3D" class="LeadersClimateSummit_link" style="text-decoration: none; width: 50%;">
+                            <li >
+                                <div>
+                                <img src="img/1619751676940.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">Ambitious short-term goals like this are critical to moving closer to a net... </h3>
+                                    <div style="margin-top: 6px;font-size: 14px;font-weight: 375; color: #000000e6;">
+                                        Bill shared this
+                                    </div>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+
+                        <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6790893895963185152?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B6H5upWE3SWe0Y%2FYePh1l8g%3D%3D" class="LeadersClimateSummit_link" style="text-decoration: none;width: 50%;">
+                            <li >
+                                <div>
+                                <img src="img/1617911190321.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">Today, we’re excited to announce our partnership with CDP to create the ...</h3>
+                                    <div style="margin-top: 6px;font-size: 14px;font-weight: 375; color: #000000e6;">
+                                        Bill shared this
+                                    </div>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.linkedin.com/feed/update/urn%3Ali%3Aactivity%3A6787410313655414784?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B6H5upWE3SWe0Y%2FYePh1l8g%3D%3D" class="LeadersClimateSummit_link" style="text-decoration: none;width: 50%;">
+                            <li >
+                                <div>
+                                <img src="img/1618769537105.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">If “Time” wins the Oscar this year, it will be the first documentary directe... </h3>
+                                    <div style="margin-top: 6px;font-size: 14px;font-weight: 375; color: #000000e6;">
+                                        Bill shared this
+                                    </div>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+
+                <a href="https://www.linkedin.com/in/williamhgates/detail/recent-activity/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B0P3gTRKNQo2X1iPw3vbY2Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-recent_activity_details_all"  class="see_all">
+
+                    <span>See all activity</span>
+                </a>
+
+            </div>
+
+            <!-- experience START -->
+            <div class="experience">
+                <h2>Experience</h2>
+                <div class="experience_1">
+                    <a href="https://www.linkedin.com/company/bill-&-melinda-gates-foundation/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BU3Tb34tES8eFAW2Z%2FjkWbg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_company" style="text-decoration: none;">
+                        <div class="experience_2">
+                            <img src="img/foundation.jpg" alt="foundation" width="56px" height="56px">
+                            <div >
+                                <div>
+                                    <h3 style="color:#000000e6 ;">Co-chair</h3>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 400; font-size: 13px;color:#000000e6">Bill & Melinda Gates Foundation</p>
+                                </div>
+                                <div>
+                                    <p style="font-size: 14px; font-weight: 400; color: #00000099;">2000 – Present . 21yrs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="experience_1">
+                    <a href="https://www.linkedin.com/company/bill-&-melinda-gates-foundation/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BU3Tb34tES8eFAW2Z%2FjkWbg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_company" style="text-decoration: none;">
+                        <div class="experience_2">
+                            <img src="img/1618231291419.jpg" alt="foundation" width="56px" height="56px">
+                            <div >
+                                <div>
+                                    <h3 style="color:#000000e6 ;">Co-Founder</h3>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 400; font-size: 13px;color:#000000e6">Microsoft</p>
+                                </div>
+                                <div>
+                                    <p style="font-size: 14px; font-weight: 400; color: #00000099;">1975 – Present . 46yrs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+                <h2 class="Education" >Education</h2>
+                <div class="experience_1">
+                    <a href="https://www.linkedin.com/company/bill-&-melinda-gates-foundation/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BU3Tb34tES8eFAW2Z%2FjkWbg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_company" style="text-decoration: none;">
+                        <div class="experience_2">
+                            <img src="img/harvard.png" alt="foundation" width="56px" height="56px">
+                            <div >
+                                <div>
+                                    <h3 style="color:#000000e6 ;">Co-Founder</h3>
+                                </div>
+                                <div>
+                                    <p style="font-weight: 400; font-size: 13px;color:#000000e6">Harvard University</p>
+                                </div>
+                                <div>
+                                    <p style="font-size: 14px; font-weight: 400; color: #00000099;">1973 – 1975</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+                <div class="experience_3">
+                    <a href="https://www.linkedin.com/company/bill-&-melinda-gates-foundation/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BU3Tb34tES8eFAW2Z%2FjkWbg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-background_details_company" style="text-decoration: none;">
+                        <div class="experience_2">
+                            <img src="img/1574903903726.jpg" alt="foundation" width="56px" height="56px">
+                            <div >
+                                <div>
+                                    <h3 style="color:#000000e6 ;">Lakeside School, Seattle</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a> 
+                </div>
+            </div>
+            
+            <!-- experience END -->
+
+            <!-- interests START -->
+            <div class="interests">
+                <h2>Interests</h2>
+                <div style="margin-top: 15px";>
+                    <ul>
+                        <a href="#" class="interests_link" style="text-decoration: none;width: 50%;">
+                            <li >
+                                <div>
+                                <img src="img/1590003577120.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">linkedin </h3>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#" class="interests_link" style="text-decoration: none;width: 50%;">
+                            <li >
+                                <div>
+                                <img src="img/harvard.png" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">Harvard University</h3>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#" class="interests_link" style="text-decoration: none;width: 50%;">
+                            <li class="li_mar" >
+                                <div>
+                                <img src="img/1519856175404.png" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">World Health Organization </h3>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#" class="interests_link" style="text-decoration: none;width: 50%;">
+                            <li class="li_mar" >
+                                <div>
+                                <img src="img/1601949978020.jpg" width="56px" height="53px" style="border-radius: 50%;">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">Mark Suzman  </h3>
+                                    <div style="margin-top: 6px;font-size: 12px;font-weight: 375; color: #00000099;">
+                                        
+                                        CEO at Bill & Melinda Gates Foundation, impatien
+                                    </div>
+
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#" class="interests_link" style="text-decoration: none;width: 50%;">
+                            <li class="li_mar" >
+                                <div>
+                                <img src="img/1548953678926.jpg" width="56px" height="53px" style="border-radius: 50%;">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">Jim Yong Kim</h3>
+                                    <div style="margin-top: 6px;font-size: 12px;;font-weight: 375; color: #00000099;">
+                                        
+                                        Vice Chairman and Partner at Global Infrastructure 
+                                    </div>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+                        <a href="#" class="interests_link" style="text-decoration: none;width: 50%;">
+                            <li class="li_mar" >
+                                <div>
+                                <img src="img/1519856174357.png" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit">UNISEF</h3>
+                                    <div style="color: #00000099; font-size: 12px;">
+                                        23,019 Reactions . 1,671 Comments
+                                    </div>
+
+                                </div>
+                            </li>
+                        </a>
+
+                    </ul>
+                </div>
+                <a href="https://www.linkedin.com/in/williamhgates/detail/recent-activity/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B0P3gTRKNQo2X1iPw3vbY2Q%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-recent_activity_details_all"  class="see_all">
+
+                    <span>See all</span>
+                </a>
+
+            </div>
+            <!-- interests END -->
+        </div>
+        <!-- main page END -->
+
+        <!-- aside START -->
+
+        <aside class="aside">
+            <!-- dream jop START -->
+            <div class="dream-jop">
+               <a href="https://www.linkedin.com/jobs/?trk=consumer_jobs_global_fallback"> <img src="img/li_evergreen_jobs_ad_300x250_v1.jpg"> </a>
+
+            </div>
+            <!-- dream jop end -->
+
+            <!-- people you may know START -->
+            <div class="people">
+                <h2>People you may know</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/williamhgates/" style="text-decoration: none;">
+                            <img src="img/bill gates.jpg" width="56px" height="56px" style="border-radius: 50%; margin-right: 12px;">
+                            <div>
+                                <h3 style="font-size: 14px; font-weight: 500;color: #363636e6">AbdelRhman Haridy</h3>
+                                <p style="font-size: 12px; color: #00000099;">Full Stack Developer at Nile Creations Connect</p>
+                            </div>
+                        </a>
+                        <div class="botton">
+                            <button class="Connect_butt">
+                                <span>Connect</span>
+                            </button>
+    
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/williamhgates/" style="text-decoration: none;">
+                            <img src="img/bill gates.jpg" width="56px" height="56px" style="border-radius: 50%; margin-right: 12px;">
+                            <div>
+                                <h3 style="font-size: 14px; font-weight: 500;color: #363636e6">AbdelRhman Haridy</h3>
+                                <p style="font-size: 12px; color: #00000099;">Full Stack Developer at Nile Creations Connect</p>
+                            </div>
+                        </a>
+                        <div class="botton">
+                            <button class="Connect_butt">
+                                <span>Connect</span>
+                            </button>
+    
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/williamhgates/" style="text-decoration: none;">
+                            <img src="img/bill gates.jpg" width="56px" height="56px" style="border-radius: 50%; margin-right: 12px;">
+                            <div>
+                                <h3 style="font-size: 14px; font-weight: 500;color: #363636e6">AbdelRhman Haridy</h3>
+                                <p style="font-size: 12px; color: #00000099;">Full Stack Developer at Nile Creations Connect</p>
+                            </div>
+                        </a>
+                        <div class="botton">
+                            <button class="Connect_butt">
+                                <span>Connect</span>
+                            </button>
+    
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/williamhgates/" style="text-decoration: none;">
+                            <img src="img/bill gates.jpg" width="56px" height="56px" style="border-radius: 50%; margin-right: 12px;">
+                            <div>
+                                <h3 style="font-size: 14px; font-weight: 500;color: #363636e6 ">AbdelRhman Haridy</h3>
+                                <p style="font-size: 12px; color: #00000099;">Full Stack Developer at Nile Creations Connect</p>
+                            </div>
+                        </a>
+                        <div class="botton">
+                            <button class="Connect_butt">
+                                <span>Connect</span>
+                            </button>
+    
+                        </div>
+
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/williamhgates/" style="text-decoration: none;">
+                            <img src="img/bill gates.jpg" width="56px" height="56px" style="border-radius: 50%; margin-right: 12px;">
+                            <div>
+                                <h3 style="font-size: 14px; font-weight: 500; color: #363636e6;">AbdelRhman Haridy</h3>
+                                <p style="font-size: 12px; color: #00000099;">Full Stack Developer at Nile Creations Connect</p>
+                            </div>
+                        </a>
+                        <div class="botton">
+                            <button class="Connect_butt">
+                                <span>Connect</span>
+                            </button>
+    
+                        </div>
+
+                    </li>
+
+                </ul>
+            </div>
+            <!-- people you may know END -->
+
+            <!-- learning START -->
+            <div class="learning">
+                <div style="display: flex;">
+                    <li-icon aria-hidden="true" type="linkedin-bug" size="14dp" color="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" data-supported-dps="14x14" fill="currentColor" class="mercado-match" width="14" height="14" focusable="false" style="color: #0a66c2;">
+                        <g>
+                        <path class="background-mercado" d="M14 1v12a1 1 0 01-1 1H1a1 1 0 01-1-1V1a1 1 0 011-1h12a1 1 0 011 1zM4 5H2v7h2zm.25-2A1.27 1.27 0 003 1.8 1.27 1.27 0 001.75 3 1.27 1.27 0 003 4.2 1.27 1.27 0 004.25 3zM12 8.29c0-2.2-.73-3.49-2.86-3.49A2.71 2.71 0 006.89 6V5H5v7h2V8.73A1.74 1.74 0 018.66 6.8C9.82 6.8 10 7.94 10 8.73V12h2z"></path>
+                        </g>
+                    </svg></li-icon>
+                    <span class="logo-text ">
+                        LEARNING
+                    </span>
+                </div>
+                <h3>
+                    Add new skills with these courses
+                </h3>
+                <div style="margin-top: 15px;">
+
+                    <ul>
+                        <a href="https://www.linkedin.com/interview-prep/assessments/urn:li:fs_assessment:(8,a)/question/urn:li:fs_assessmentQuestion:(10169,aq1)/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BfWApO3hqQRiM%2F9HWY6yzcA%3D%3D" class="LeadersClimateSummit_link" style="text-decoration: none; margin-bottom: 16px; width: 50%; ">
+                            <li style="align-items: center; margin-right: 8px; color: #000000e6; font-weight: 600;">
+                                <div>
+                                <img src="img/courses.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit" style="margin-left: 8px; color: #252525e6; font-weight: 600;margin-bottom: 10px;">Let's role play interacting with an angry customer. </h3>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.linkedin.com/interview-prep/assessments/urn:li:fs_assessment:(8,a)/question/urn:li:fs_assessmentQuestion:(10161,aq1)/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BfWApO3hqQRiM%2F9HWY6yzcA%3D%3D" class="LeadersClimateSummit_link" style="text-decoration: none; margin-bottom: 16px; width: 50%; ">
+                            <li style="align-items: center; margin-right: 8px; color: #000000e6; font-weight: 600;margin-top: 17px">
+                                <div>
+                                <img src="img/courses.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit" style="margin-left: 8px; color: #252525e6; font-weight: 600;margin-bottom: 10px;">Describe a time you had to deal with a difficult client. </h3>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="https://www.linkedin.com/interview-prep/assessments/urn:li:fs_assessment:(8,a)/question/urn:li:fs_assessmentQuestion:(10155,aq1)/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BfWApO3hqQRiM%2F9HWY6yzcA%3D%3D" class="LeadersClimateSummit_link" style="text-decoration: none; margin-bottom: 16px; width: 50%; ">
+                            <li style="align-items: center; margin-right: 8px; color: #000000e6; font-weight: 600;margin-top: 17px">
+                                <div>
+                                <img src="img/courses.jpg" width="56px" height="53px">
+                                </div>
+                                <div style="  margin-left: 5px;">
+                                    <h3 class="LeadersClimateSummit" style="margin-left: 8px; color: #252525e6; font-weight: 600;margin-bottom: 10px;">What are you looking for from this company? </h3>
+                                </div>
+                            </li>
+                        </a>
+
+                    </ul>
+                    <a href="https://www.linkedin.com/learning/?trk=profileNonSelf_d_flagship3_profile_view_base_learningFeedm015_viewMoreCourses_learning&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BR9zPEj8jRXWCHwnGVGOMNg%3D%3D"  class="see_all" style="margin: 24px -15px -24px">
+
+                        <span>See all courses</span>
+                    </a>
+    
+                </div>
+
+            </div>
+            <!-- learning END -->
+
+        </aside>
+        <!-- aside END -->
+
+        <div style="clear: both;"></div>
+
+        <!-- footer START -->
+
+        <hr>
+
+        <footer class="footer">
+            <li-icon type="linkedin-logo" size="21dp" color="brand" role="img" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 21" data-supported-dps="84x21" fill="currentColor" class="mercado-match" width="84" height="21" focusable="false" style="color: #0a66c2;">
+                <g>
+                  <g class="background-mercado">
+                    <path d="M12.5 2.75a1.75 1.75 0 101.8 1.75 1.75 1.75 0 00-1.8-1.75zM11 8h3v10h-3zM22.34 7.76A4.06 4.06 0 0019 9.39V8h-3v10h3v-5a2.31 2.31 0 012.16-2.48c1.1 0 1.84.82 1.84 2.44V18h3v-6.25c0-3.06-1.89-3.99-3.66-3.99zM82.5 0h-18A1.5 1.5 0 0063 1.5v18a1.5 1.5 0 001.5 1.5h18a1.5 1.5 0 001.5-1.5v-18A1.5 1.5 0 0082.5 0zM69 18h-3V8h3zM67.5 6.25a1.75 1.75 0 111.8-1.75 1.75 1.75 0 01-1.8 1.75zM81 18h-3v-5.09c0-1.62-.74-2.44-1.84-2.44A2.31 2.31 0 0074 13v5h-3V8h3v1.39a4.06 4.06 0 013.3-1.63c1.77 0 3.66.93 3.66 4zM3 3H0v15h9v-3H3V3zM57 9a4.23 4.23 0 00-3.17-1.3A4.9 4.9 0 0049 12.94a5 5 0 004.87 5.36 3.78 3.78 0 003.31-1.61V18H60V3h-3zm-2.54 6.8A2.57 2.57 0 0151.9 13a2.55 2.55 0 012.56-2.8A2.63 2.63 0 0157.1 13a2.6 2.6 0 01-2.64 2.8zM38.04 8H34.4l-3.34 4.04H31V3h-3v15h3v-4.81h.06L34.48 18h3.75l-4.06-5.5L38.04 8z"></path>
+                    <path d="M43.13 7.7A5 5 0 0038 12.87a5.11 5.11 0 005.24 5.43 5.5 5.5 0 004.39-1.94l-1.93-1.3a3.28 3.28 0 01-2.4 1 2.24 2.24 0 01-2.38-2V14h7v-.77C48 9.52 45.85 7.7 43.13 7.7zm-2.2 4.3a2.16 2.16 0 012.21-2.1 2 2 0 012 2.1z"></path>
+                  </g>
+                </g>
+              </svg></li-icon>
+              <div class="footer_1">
+                  <div class="footer_li">
+                        <ul>
+                            <li>About</li>
+                            <li>Accessability</li>
+                            <li>Talent Solutions</li>
+                            <li>Community Guidelines</li>
+                            <li>Careers</li>
+                            <li>Marketing Solutions</li>
+                            <li>Privacy & Terms</li>
+                            <li>Ad Choices</li>
+                            <li>Advertising</li>
+                            <li>Sales Solutions</li>
+                            <li>Mobile</li>
+                            <li>Small Business</li>
+                            <li>Safety Center</li>
+                        </ul>
+                    </div>
+                    <div style="display: inline-block;">
+                        <div>
+                            <ul style="list-style: none;">
+                                <li style="width: 75%;" >
+                                    <div style="display: flex; width: 100%;">
+                                        <div style="width: 25%">
+                                            <li-icon aria-hidden="true" type="question-pebble-icon" active="true" class="global-footer__action-icon" color="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="color: #00000099;">
+                                                    <path d="M12 2a10 10 0 1010 10A10 10 0 0012 2zm0 16.25A1.25 1.25 0 1113.25 17 1.25 1.25 0 0112 18.25zm1.41-5.46L13 13v1h-2v-2.21l1.49-.79C13.82 10.34 14 9.77 14 9.3c0-.78-.92-1.3-2.3-1.3A7.12 7.12 0 008 9.24V7a8 8 0 013.7-1c3 0 4.3 1.55 4.3 3.3a3.91 3.91 0 01-2.59 3.49z">                                   
+                                                    </path>
+                                                </svg>
+                                            </li-icon>
+                                        </div>
+                                        <div style="width: 100%">
+                                            <p style="color: #56687a; font-size: 14px; ">Questions?</p>
+                                            <p style="font-weight: 400;">Visit our Help Center.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li style="width: 111%;">
+                                    <div style="display: flex; width: 100%; ">
+                                        <div style="width: 16%">
+                                            <li-icon aria-hidden="true" type="gear-icon" active="true" class="global-footer__action-icon" color="true">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false" style="color: #00000099;">
+                                                <path d="M9.18 2l-4.3 2.52L6.22 8l-.52.91-3.7.55v5l3.64.54.54.93-1.34 3.53L9.14 22l2.29-2.9h1.09l2.3 2.9 4.32-2.52L17.79 16l.53-.93 3.68-.53v-5L18.32 9l-.51-.9 1.36-3.51L14.86 2l-2.33 3h-1zM12 9a3 3 0 11-3 3 3 3 0 013-3z">
+
+                                                </path>
+                                            </svg>
+                                            </li-icon>
+                                        </div>
+                                        <div style="width: 100%">
+                                            <p style="color: #56687a; font-size: 14px;">Manage your account and privacy</p>
+                                            <p style="font-weight: 400;">Go to your Settings.</p>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+        </footer>
+        <!-- footer END -->
+    </body>
+</html>
